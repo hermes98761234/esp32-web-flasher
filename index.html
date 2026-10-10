@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESP32 Web Flasher: flash ESP32 and ESP8266 firmware from your browser</title>
+    <meta name="description" content="Free browser-based ESP32 / ESP8266 firmware flasher built on esptool-js and Web Serial: read chip info and MAC, flash several .bin files at offsets, erase, load files from disk, URL or an ESP Web Tools manifest, then watch the serial monitor. Nothing is uploaded." />
+    <meta name="keywords" content="esp32 flasher, esp8266 flasher, esptool-js, web serial, flash firmware online, esp web tools, esp32 serial monitor, read esp32 mac, arduino esp32 bin" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/esp32-web-flasher/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="ESP Flasher" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ESP32 Web Flasher" />
+    <meta property="og:url" content="https://hermes98761234.github.io/esp32-web-flasher/" />
+    <meta property="og:title" content="Flash ESP32 firmware from your browser" />
+    <meta property="og:description" content="Web Serial + esptool-js: chip info, multi-file flashing at offsets, manifests and a serial monitor." />
+    <meta property="og:image" content="https://hermes98761234.github.io/esp32-web-flasher/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The ESP32 Web Flasher logo with the headline: flash ESP32 firmware from your browser" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flash ESP32 firmware from your browser" />
+    <meta name="twitter:description" content="Web Serial + esptool-js. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/esp32-web-flasher/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ESP32 Web Flasher",
+        "url": "https://hermes98761234.github.io/esp32-web-flasher/",
+        "description": "Flashes ESP32 and ESP8266 firmware from the browser using Web Serial and esptool-js, with a serial monitor.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript; flashing needs Web Serial (Chrome, Edge, Opera)",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This tool needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
